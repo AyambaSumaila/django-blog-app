@@ -6,8 +6,9 @@ Welcome to my Django Blog Application! This platform empowers users to share the
 
 ## 🚀 Key Features
 
-![](Images/me.png)
+
 ![](Images/me_2.png)
+![](Images/me.png)
 ![](Images/me_3.png)
 
 
