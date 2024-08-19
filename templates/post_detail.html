@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+<div class="container">
+
+{% block content %}
+<div class="post-entry">
+    
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+</div>
+<p>Please edit or delete your posts here</p>
+<a href="{% url 'post_edit' post.pk %}" style="text-decoration:none;">+ Edit Blog Post</a>
+<pre><a href="{% url 'post_delete' post.pk %}" style="text-decoration:none;">- Delete Blog Post</a></pre>
+
+{% endblock content %}
+</div>
