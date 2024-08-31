@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/myproject
+    ports:
+      - "8000:8000"
+    image: application:myproject
+    container_name: app_container
+    command: gunicorn myblog.wsgi:application --bind 0.0.0.0:8080
